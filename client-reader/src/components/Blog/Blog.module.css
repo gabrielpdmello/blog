@@ -1,0 +1,55 @@
+.blog-post {
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  width: 60%;
+  min-width: 30rem;
+  margin: 0 auto 3rem auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.blog-post h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-meta {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.blog-content {
+  margin-bottom: 4rem;
+}
+
+.blog-content table {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.blog-content th,
+.blog-content td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.blog-content pre,
+.blog-content code {
+  background-color: rgb(210, 210, 210);
+}
+
+.blog-content pre {
+  padding: 1rem;
+}
+
+.loading-wrapper {
+  max-width: 5rem;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}

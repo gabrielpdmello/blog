@@ -1,0 +1,101 @@
+.blog-list-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.blog-list-container h2 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.blog-list-container > p {
+  margin: 0 0 2rem 0;
+}
+
+.blog-item {
+  display: block;
+  position: relative;
+  margin: 0 0 2rem 0;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-item:hover .edit-btn,
+.blog-item:focus-within .edit-btn {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.blog-item h3 {
+  font-size: 1.6rem;
+}
+
+.blog-item h3:hover {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.loading-wrapper {
+  max-width: 5rem;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.filter-status {
+  margin-bottom: 2rem;
+}
+
+.not-published {
+  color: var(--warning);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.article-link {
+  text-decoration: none;
+  color: black;
+  padding: 3rem 2rem;
+  display: block;
+}
+
+.edit-btn {
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 1rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  color: black;
+  text-decoration: none;
+}
+
+.edit-icon {
+  font-size: 1.4rem;
+  color: darkgoldenrod;
+}
+
+.edit-text {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+.comment {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 2.5rem 1rem;
+  position: relative;
+}
+
+.comment:hover .delete-btn,
+.comment:focus-within .delete-btn {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.content {
+  word-wrap: break-word;
+}
+
+.delete-btn {
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 1rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.delete-icon {
+  font-size: 1.4rem;
+  color: red;
+}
+
+.delete-text {
+  text-decoration: underline;
+}
+
+.loading-wrapper {
+  max-width: 5rem;
+  margin: 0 auto;
+}

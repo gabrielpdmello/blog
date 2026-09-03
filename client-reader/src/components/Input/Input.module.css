@@ -1,0 +1,16 @@
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.6rem 0;
+}
+
+.wrapper label {
+  display: block;
+}
+
+.wrapper input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

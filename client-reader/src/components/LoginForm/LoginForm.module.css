@@ -1,0 +1,31 @@
+.form {
+  max-width: 80rem;
+  min-width: 20rem;
+  width: 40%;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.form h2 {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.submit {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  text-align: center;
+}
+
+.have-account {
+  display: block;
+}
+
+.have-account span {
+  margin-right: 0.6rem;
+}

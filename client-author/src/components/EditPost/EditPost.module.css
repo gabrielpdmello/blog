@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  margin: 0 auto 3rem auto;
+  width: 70%;
+  min-width: 50rem;
+}
+
+.editor-wrapper {
+  border: 1px solid black;
+  min-height: 50rem;
+}
+
+.editor {
+  min-height: 50rem;
+  cursor: text;
+}
+
+.loading-wrapper {
+  max-width: 5rem;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.error {
+  text-align: center;
+}

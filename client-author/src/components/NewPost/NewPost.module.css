@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  margin: 0 auto 3rem auto;
+  width: 70%;
+  min-width: 50rem;
+}
+
+.editor-wrapper {
+  border: 1px solid black;
+  min-height: 50rem;
+}

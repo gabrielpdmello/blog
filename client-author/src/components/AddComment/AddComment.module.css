@@ -1,0 +1,17 @@
+.comment-text {
+  width: 100%;
+  resize: vertical;
+  max-height: 10rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.add-button-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign-out {
+  margin-bottom: 2rem;
+}
