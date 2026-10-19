@@ -15,27 +15,7 @@ function AddComment({ postId, setComments }) {
   });
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
-  const [currentUser, setCurrentUser] = useState();
-  const [currentUserLoading, setCurrentUserLoading] = useState(true);
   const { request } = useApi();
-
-  useEffect(() => {
-    async function load() {
-      try {
-        if (token) {
-          const response = await request(`${apiUrl}/users/me`);
-          if (!response.ok) throw new Error("Server error");
-          const data = await response.json();
-          setCurrentUser(data);
-        }
-      } catch (err) {
-        setErrors(err);
-      } finally {
-        setCurrentUserLoading(false);
-      }
-    }
-    load();
-  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -61,7 +41,6 @@ function AddComment({ postId, setComments }) {
         throw data.errors;
       }
 
-      data.author = currentUser;
       setComments((prev) => [...prev, data]);
       setFormData((prev) => ({ ...prev, comment: "" }));
     } catch (err) {
@@ -96,10 +75,6 @@ function AddComment({ postId, setComments }) {
 
   if (errors) {
     <p>A network error was encountered</p>;
-  }
-
-  if (currentUserLoading) {
-    return;
   }
 
   return (

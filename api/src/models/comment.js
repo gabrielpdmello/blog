@@ -36,6 +36,15 @@ async function addComment(postId, userId, comment) {
       user_id: userId,
       content: comment,
     },
+    include: {
+      author: {
+        select: {
+          name: true,
+          username: true,
+          is_blog_author: true,
+        },
+      },
+    },
   });
 }
 

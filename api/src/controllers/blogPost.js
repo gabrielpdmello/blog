@@ -11,19 +11,19 @@ const getAllPosts = [
 
         if (status === "published") {
           const posts = await blogPostDB.getAllPublishedPosts();
-          return res.json(posts);
+          return res.status(200).json(posts);
         }
 
         if (status === "unpublished") {
           const posts = await blogPostDB.getAllUnpublishedPosts();
-          return res.json(posts);
+          return res.status(200).json(posts);
         }
         const posts = await blogPostDB.getAllPosts();
-        return res.json(posts);
+        return res.status(200).json(posts);
       }
 
       const posts = await blogPostDB.getAllPublishedPosts();
-      return res.json(posts);
+      return res.status(200).json(posts);
     } catch (err) {
       console.log(err);
     }
