@@ -26,19 +26,20 @@ const login = async (req, res) => {
       });
     }
 
+    const user = {
+      id: foundUser.id,
+      name: foundUser.name,
+      username: foundUser.username,
+      is_blog_author: foundUser.is_blog_author,
+    };
+
     const secret = process.env.SECRET_KEY;
-    const token = jwt.sign({ username }, secret, {
+    const token = jwt.sign({user: user}, secret, {
       expiresIn: Number(process.env.JWT_EXPIRE),
     });
     return res.status(200).json({
       message: "Auth Passed",
       token,
-      user: {
-        id: foundUser.id,
-        name: foundUser.name,
-        username: foundUser.username,
-        is_blog_author: foundUser.is_blog_author,
-      },
     });
   } catch (err) {
     console.log(err);
